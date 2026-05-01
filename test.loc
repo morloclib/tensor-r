@@ -1,0 +1,4 @@
+module test-tensor-r (test)
+
+import tensor.test (test)
+import tensor-r

@@ -1,0 +1,11 @@
+name: tensor-r
+version: 0.1.0
+homepage: https://github.com/morloclib/tensor-r
+synopsis: R implementations for tensor operations
+description: Base R implementations of foundational dense tensor operations.
+category: data
+license: MIT
+author: "Zebulun Arendsee"
+maintainer: "z@morloc.io"
+github: https://github.com/morloclib/tensor-r
+bug-reports: https://github.com/morloclib/tensor-r
