@@ -1,5 +1,5 @@
 name: tensor-r
-version: 0.1.0
+version: 0.2.0
 homepage: https://github.com/morloclib/tensor-r
 synopsis: R implementations for tensor operations
 description: Base R implementations of foundational dense tensor operations.
