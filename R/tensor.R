@@ -1,19 +1,17 @@
-## Foundational tensor operations in base R.
-## Tensor1 maps to a 1-D array, Tensor2 to a matrix, higher ranks to N-D arrays.
+## Foundational tensor operations in base R (ranks 2-5).
+## Tensor2 maps to a matrix, higher ranks to N-D arrays. Rank-1 (Vector)
+## lives in vector-r/R/vector.R.
 
-morloc_zeros1 <- function(d1) array(0, dim = c(d1))
 morloc_zeros2 <- function(d1, d2) array(0, dim = c(d1, d2))
 morloc_zeros3 <- function(d1, d2, d3) array(0, dim = c(d1, d2, d3))
 morloc_zeros4 <- function(d1, d2, d3, d4) array(0, dim = c(d1, d2, d3, d4))
 morloc_zeros5 <- function(d1, d2, d3, d4, d5) array(0, dim = c(d1, d2, d3, d4, d5))
 
-morloc_ones1 <- function(d1) array(1, dim = c(d1))
 morloc_ones2 <- function(d1, d2) array(1, dim = c(d1, d2))
 morloc_ones3 <- function(d1, d2, d3) array(1, dim = c(d1, d2, d3))
 morloc_ones4 <- function(d1, d2, d3, d4) array(1, dim = c(d1, d2, d3, d4))
 morloc_ones5 <- function(d1, d2, d3, d4, d5) array(1, dim = c(d1, d2, d3, d4, d5))
 
-morloc_fill1 <- function(v, d1) array(v, dim = c(d1))
 morloc_fill2 <- function(v, d1, d2) array(v, dim = c(d1, d2))
 morloc_fill3 <- function(v, d1, d2, d3) array(v, dim = c(d1, d2, d3))
 morloc_fill4 <- function(v, d1, d2, d3, d4) array(v, dim = c(d1, d2, d3, d4))
