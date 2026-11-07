@@ -80,3 +80,11 @@ morloc_packTensor5 <- function(packed) {
 morloc_unpackTensor5 <- function(t) {
     list(list(dim(t)[1], dim(t)[2], dim(t)[3], dim(t)[4], dim(t)[5]), .morloc_to_rowmajor(t))
 }
+
+morloc_tensor_eq <- function(a, b) {
+  da <- dim(a)
+  db <- dim(b)
+  length(da) == length(db) && all(da == db) && isTRUE(all(a == b))
+}
+
+morloc_tensor_ne <- function(a, b) !morloc_tensor_eq(a, b)
